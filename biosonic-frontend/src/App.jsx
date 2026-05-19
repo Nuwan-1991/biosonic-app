@@ -4,7 +4,7 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { jsPDF } from 'jspdf';
 
-const API_BASE_URL = "http://localhost:8000/api/v1";
+const API_BASE_URL = "https://nuwan1991-biosonic-api.hf.space/api/v1";
 
 function App() {
   const [token, setToken] = useState(() => { try { return localStorage.getItem("biosonic_token") || null; } catch (e) { return null; } });
